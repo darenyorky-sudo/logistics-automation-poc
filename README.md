@@ -11,3 +11,9 @@ A robust automation backend designed to streamline logistics workflows, specific
 To run the full flow:
 ```bash
 python run_demo.py
+
+## Integration Guidelines
+This engine is designed to be highly portable:
+- **Webhooks:** The `processor.py` logic can be triggered by a simple HTTP request (e.g., via n8n or Make.com).
+- **Extensibility:** You can easily add new modules to `src/` to support more carriers or different TMS formats.
+- **Data Privacy:** Local processing ensures your sensitive logistics data remains under your control.
